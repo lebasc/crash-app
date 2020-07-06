@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	<title>Crash Test Application</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<div class="header">
+  <h1>Push It To The Limit</h1>
+  <p>  </p>
+</div>
+
+<body>
+
+<div class="row">
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Something useful</p>
+</div>
+
+
+<div class="column middle">
+    <h2>Main Content</h2>
+
+	<form method="post" action="cpu">
+	    <button type="submit" class="button">High CPU</button>
+	</form>
+	<form method="post" action="mem">
+	    <button type="submit" class="button">Memory Crash</button>
+	</form>
+	<form method="post" action="disk">
+	    <button type="submit" class="button">Disk Flood</button>
+	</form>
+	<form method="post" action="log">
+	    <button type="submit" class="button">Flood Logs</button>
+	</form>
+	<form method="post" action="stop">
+	    <button type="submit" class="button">Stop Actions</button>
+	</form> 
+</div>
+
+<div class="column side">
+    <h2>Side</h2>
+    <p>Something thats more useful</p>
+  </div>
+</div>
+	
+</body>
+</html>
