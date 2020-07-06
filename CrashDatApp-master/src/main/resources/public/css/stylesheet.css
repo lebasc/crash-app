@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  position: relative; top: -20px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+}
+
+.heading {
+ 	color: white;
+  	padding-top: 1px;
+}
+
+.flex-center{
+
+	justify-content: center;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 100px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Button layout */
+.button {
+  background-color: #4CAF50;
+  border-radius: 8px;
+  color: white;
+  padding: 16px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 58px;
+  float: left;
+  cursor: pointer;
+}
+
+.buttonStop {
+	background-color: #ed2e16;
+  border-radius: 8px;
+  color: white;
+  padding: 16px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 58px;
+  float: left;
+  cursor: pointer;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.logo {
+/*  width: 42px;
+  	height: 49px;
+  	padding-top: .5rem;
+  	padding-bottom: .5rem; */
+  	height: 65px;
+    padding-top: 2.5rem;
+    padding-bottom: .5rem;
+}

@@ -1,0 +1,9 @@
+---
+applications:
+- name: CrashDatApp
+  random-route: true
+  instances: 1
+  memory: 1G
+  buildpack: java_buildpack_offline
+  stack: cflinuxfs3
+  path: target/CrashDatApp-2.jar
